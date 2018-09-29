@@ -2,14 +2,18 @@
 
 [Documentation](https://facebook.github.io/react-native/docs/cameraroll)
 
-#### Supports:
+#### Why?
+
+Fixed issue https://github.com/facebook/react-native/issues/20112
+
+#### Supports
 Android
 
-### Installation:
+### Installation
 ```
 react-native link react-native-camera-roll-android
 ```
-#### Manual:
+#### Manual
 `android/settings.gradle`:
 settings.gradle
 ```diff
@@ -48,7 +52,7 @@ import android.app.Application;
 
 
 ### Using
-
+```js
 import { CameraRoll as CameraRollIOS, Platform } from "react-native";
 import CameraRollAndroid from 'react-native-camera-roll-android';
 
@@ -57,3 +61,4 @@ if (Platform.OS === 'android') {
 } else {
   CameraRoll = CameraRollIOS;
 }
+```
